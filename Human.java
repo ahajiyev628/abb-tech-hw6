@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Objects;
 
-public class Human extends Pet {
+public class Human {
     private String name;
     private String surname;
     private int year;
@@ -86,7 +86,6 @@ public class Human extends Pet {
     }
 
     public Human(String name, String surname, int year, int iq, Pet pet, Human mother, Human father, String[][] schedule) {
-        super(pet.getSpecies(), pet.getSpecies(), pet.getAge(), new String[]{"eat", "drink", "sleep"});
         this.name = name;
         this.surname = surname;
         this.year = year;
@@ -98,7 +97,6 @@ public class Human extends Pet {
     }
 
     public Human(String name, String surname, int year, int iq, Pet pet, Human mother, Human father) {
-        super(pet.getSpecies(), pet.getSpecies(), pet.getAge(), new String[]{"eat", "drink", "sleep"});
         this.name = name;
         this.surname = surname;
         this.year = year;
@@ -109,7 +107,6 @@ public class Human extends Pet {
     }
 
     public Human(String name, String surname, int year, Human mother, Human father) {
-        super("dog", "wimel", 5, new String[]{"eat", "drink", "sleep"});
         this.name = name;
         this.surname = surname;
         this.year = year;
@@ -118,30 +115,12 @@ public class Human extends Pet {
     }
 
     public Human(String name, String surname) {
-        super("dog", "wimel", 5, new String[]{"eat", "drink", "sleep"});
         this.name = name;
         this.surname = surname;
     }
 
     public Human(String surname) {
-        super("");
         this.surname = surname;
-    }
-
-    public static String tLevel(int a) {
-        if (a > 50) {
-            return "very sly";
-        } else {
-            return "almost not sly";
-        }
-    }
-
-    public void describePet() {
-        System.out.println("I have a " + super.getSpecies() + ", he is " + super.getAge() + " years old, he is " + Human.tLevel(super.getTrickLevel()));
-    }
-
-    public void greetPet() {
-        System.out.println("Hello, " + super.getNickname());
     }
 
     @Override
@@ -180,4 +159,3 @@ public class Human extends Pet {
         System.out.println("finalize() method was redefined in Human class");
     }
 }
-
