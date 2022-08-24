@@ -1,3 +1,5 @@
+package homework6;
+
 import java.util.Arrays;
 import java.util.Objects;
 import java.util.Scanner;
@@ -9,6 +11,8 @@ public class Pet {
     private int trickLevel;
     String[] habits;
 
+    private Family family;
+
     public String[] getHabits() {
         return habits;
     }
@@ -19,6 +23,23 @@ public class Pet {
 
     public Pet() {
 
+    }
+
+    public Pet(String species, String nickname, int age, int trickLevel, String[] habits, Family family) {
+        this.species = species;
+        this.nickname = nickname;
+        this.age = age;
+        this.trickLevel = trickLevel;
+        this.habits = habits;
+        this.family = family;
+    }
+
+    public Family getFamily() {
+        return family;
+    }
+
+    public void setFamily(Family family) {
+        this.family = family;
     }
 
     public String getSpecies() {
