@@ -1,3 +1,5 @@
+package homework6;
+
 import java.util.Arrays;
 import java.util.Objects;
 
@@ -12,6 +14,11 @@ public class Family {
         this.mother = mother;
         this.father = father;
         this.children = children;
+    }
+
+    public Family(Human mother, Human father) {
+        this.mother = mother;
+        this.father = father;
     }
 
     public Human[] getChildren() {
