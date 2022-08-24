@@ -58,6 +58,7 @@ public class Main {
         System.out.println("");
         fmly.deleteChild(1);
         fmly.countFamily();
+        System.out.println("");
 
         System.out.println(fmly.toString());
     }
