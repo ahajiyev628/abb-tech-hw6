@@ -1,3 +1,5 @@
+package homework6;
+
 import java.util.Arrays;
 import java.util.Objects;
 
@@ -9,10 +11,26 @@ public class Human {
     private Pet pet;
     private Human mother;
     private Human father;
+    private Family family;
     private String[][] schedule = new String[7][2];
 
     public Human() {
 
+    }
+
+    public Human(String name, String surname, Pet pet, Family family) {
+        this.name = name;
+        this.surname = surname;
+        this.pet = pet;
+        this.family = family;
+    }
+
+    public Family getFamily() {
+        return family;
+    }
+
+    public void setFamily(Family family) {
+        this.family = family;
     }
 
     public Human getMother() {
