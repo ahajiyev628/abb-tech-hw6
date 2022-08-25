@@ -98,8 +98,8 @@ public class Family {
         return children;
     }
 
-    public void countFamily() {
-        System.out.printf("number of family member: %d", children.length + 2);
+    public int countFamily() {
+        return children.length + 2;
     }
 
     @Override
