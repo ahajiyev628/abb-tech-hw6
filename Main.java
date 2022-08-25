@@ -41,24 +41,24 @@ public class Main {
         Human child3 = new Human("Allahverdi3", "Hajiyev3");
 
         fmly.countFamily();
-        System.out.println("");
+
         fmly.addChild(child1);
-        fmly.countFamily();
-        System.out.println("");
+        System.out.println(fmly.countFamily());
+
         fmly.addChild(child2);
-        fmly.countFamily();
-        System.out.println("");
+        System.out.println(fmly.countFamily());
+
         fmly.addChild(child3);
-        fmly.countFamily();
-        System.out.println("");
+        System.out.println(fmly.countFamily());
+
 
 
         fmly.deleteChild(child2);
-        fmly.countFamily();
-        System.out.println("");
+        System.out.println(fmly.countFamily());
+
         fmly.deleteChild(1);
-        fmly.countFamily();
-        System.out.println("");
+        System.out.println(fmly.countFamily());
+
 
         System.out.println(fmly.toString());
     }
