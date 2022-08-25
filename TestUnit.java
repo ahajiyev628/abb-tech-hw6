@@ -37,25 +37,25 @@ public class TestUnit {
         fmly.setChildren(new Human[]{new Human()});
 
         fmly.countFamily();
-        System.out.println("");
+
         fmly.addChild(child1);
-        fmly.countFamily();
-        System.out.println("");
+        System.out.println(fmly.countFamily());
+
         fmly.addChild(child2);
-        fmly.countFamily();
-        System.out.println("");
+        System.out.println(fmly.countFamily());
+
         fmly.addChild(child3);
-        fmly.countFamily();
-        System.out.println("");
+        System.out.println(fmly.countFamily());
+
+
 
         fmly.deleteChild(child2);
-        fmly.countFamily();
-        System.out.println("");
+        System.out.println(fmly.countFamily());
+
         fmly.deleteChild(1);
-        fmly.countFamily();
-        System.out.println("");
+        System.out.println(fmly.countFamily());
 
         System.out.println(fmly.toString());
-        Assert.assertTrue(true);
+        Assert.assertEquals(4,fmly.countFamily());
     }
 }
